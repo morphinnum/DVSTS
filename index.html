@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>WI-FI TROUBLESHOOTER</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+
+
+
+<body>
+    <section class="header">
+
+        <div class="header-top">
+            <input type="search" class="header-top-search" placeholder=" &#x1F50D Type something to search">
+
+            <div class="header-top-tools">
+                <select class="header-top-tools-lang">
+                            <option>en-US</option>
+                </select>
+                <span class="glyphicon glyphicon-user"></span>
+                <select class="header-top-tools-account">
+                        <option> generic@nectacorp.com</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="header-details">
+            <span class="header-details-title">WI-FI TROUBLESHOOTER</span>
+
+            <div class="header-details-tools">
+                <span class="glyphicon glyphicon-cog"></span>
+                <select class="header-details-tools-bookmarks">
+                        <option>Bookmarks</option>
+                </select>
+                <span class="glyphicon glyphicon-bookmark"></span>
+                <span class="header-details-tools-link"><span class="glyphicon glyphicon-link"></span>Share a link</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class='wrap'>
+
+        <section class="filters">
+            <div class="filters-header">
+                <span class="filters-header-title">FILTERS</span>
+                <select class="filters-header-options filters-select">
+                        <option>Show/Hide Filters</option>
+                </select>
+            </div>
+
+            <div class="filters-config">
+                <select class="filters-config-date filters-select" >
+                        <option>DATE RANGE: Previous Week</option>
+                </select>
+                
+                <div class="filters-config-row ">
+                    <select class="filters-config-row-loc filters-select">
+                        <option>LOCATION: All</option>
+                    </select>
+                    <select class="filters-config-row-reg filters-select">
+                        <option>REGION: All</option>
+                    </select>
+                    <select class="filters-config-row-ssid filters-select">
+                        <option>SSID: All</option>
+                    </select>
+                    <select class="filters-config-row-bssid filters-select">
+                        <option>BSSID: All</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filters-buttons">
+                <button class="filters-buttons-apply">APPLY</button>
+                <button class="filters-buttons-reset">RESET FILTER <span class="glyphicon glyphicon-refresh"></span></button>
+            </div>
+
+        </section>
+
+
+        <section class="table">
+            <div class="table-options">
+                <div class="table-options-list">
+                <select class="table-options-metrics filters-select">
+                    <option>METRICS: None</option>
+                </select>
+                <select class="table-options-group filters-select">
+                    <option class="table-options-group-option">
+                        GROUP BY: Location
+                    </option>
+                    <option class="table-options-group-option">
+                        GROUP BY: SSID
+                    </option>
+                </select>
+                </div>
+                <button class="table-options-save"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+            </div>
+
+
+            <table class="table-board">
+                <tr class="table-board-row">
+                    <th class="table-board-column-title">DATE</th>
+                    <th class="table-board-column-title">LOCATION   &#8595;</th>
+                    <th class="table-board-column-title">SSID</th>
+                    <th class="table-board-column-title">BSSID</th>
+                    <th class="table-board-column" style="padding-right: 100px; font-weight: 500;">TOTAL STREAMS</th>
+                </tr>
+                <tr class="table-board-row">
+                    <th class="table-board-row-column">09/29/2018</th>
+                    <th class="table-board-row-column">Location 1</th>
+                    <th class="table-boardv-column"></th>
+                    <th class="table-board-row-column"></th>
+                    <th class="table-board-row-column"></th>
+                </tr>
+                <tr>
+                    <th class="table-board-column">09/28/2018</th>
+                    <th class="table-board-column">Location 1</th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                </tr>
+                <tr>
+                    <th class="table-board-column">09/27/2018</th>
+                    <th class="table-board-column">Location 1</th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                </tr>
+                <tr>
+                    <th class="table-board-column">09/26/2018</th>
+                    <th class="table-board-column">Location 2</th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                </tr>
+                <tr>
+                    <th class="table-board-column">09/25/2018</th>
+                    <th class="table-board-column">Location 2</th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                </tr>
+                <tr>
+                    <th class="table-board-column">09/24/2018</th>
+                    <th class="table-board-column">Location 3</th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                </tr>
+                <tr>
+                    <th class="table-board-column">09/23/2018</th>
+                    <th class="table-board-column">Location 4</th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                    <th class="table-board-column"></th>
+                </tr>
+            </table>
+
+        </section>
+
+
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+         url('../fonts/Roboto-Bold.ttf') format("truetype"),
+         url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+         url('../fonts/Roboto-Medium.ttf') format("truetype"),
+         url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@text:  #595959;
+@text_dark: #262626;
+@background-color: #f2f2f2;
+@accent: #ff8000;
+
+
+body {
+	margin: 0;
+    padding: 0;
+    background-color: @background-color;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 30px 0px;
+    max-width: 1200px;
+}
+
+select {
+    height: 30px;
+    outline: none;
+    border: none;
+    color: @text;
+}
+
+.glyphicon {
+    color: #cccccc;
+}
+
+.header {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px 30px 0;
+    margin: 0 auto;
+    background-color: white;
+    &-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        &-search {
+            margin-left: 100px;
+            padding-left: 10px;
+            width: 480px;
+            height: 35px;
+            outline: none;
+            border: 1px solid @background-color;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        &-tools {
+            display: inline-block;
+        }
+    }
+    &-details {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 16px;
+        &-title {
+            padding: 0px 15px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            border-bottom: 3pt solid @accent;
+            margin-left: 20px;
+        }
+        &-tools {
+            margin-bottom: 10px;
+            &-link {
+                height: 30px;
+                color: @text;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+
+.filters {
+    background-color: white;
+    padding: 20px 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-title {
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+    &-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 20%;
+        margin-top: 10px;
+        &-apply {
+            width: 90px;
+            height: 35px;
+            outline: none;
+            user-select: none;
+            border: none;
+            border-radius: 2px;
+            font-weight: 700;
+            color: white;
+            background-color: @accent;
+            -webkit-transition-duration: 0.4s; 
+            transition-duration: 0.4s;
+        }
+        &-reset {
+            height: 35px;
+            outline: none;
+            user-select: none;
+            border: none;
+            background-color: transparent;
+            -webkit-transition-duration: 0.4s; 
+            transition-duration: 0.4s;
+            border-radius: 2px;
+        }
+    }
+}
+
+.filters-buttons-apply:hover {
+    background-color: darken(@accent, 10%);
+}
+
+.filters-buttons-reset:hover {
+    background-color: lighten(grey, 40%);
+}
+
+
+.filters-select {
+    border: 1px solid #cccccc;
+    padding: 0 10px;
+    margin: 0 10px 20px 0;
+    border-radius: 3px;
+}
+
+.table {
+    background-color: white;
+    padding: 20px 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    margin-top: 30px;
+    &-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-save {
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            width: 30px;
+            height: 30px;
+            border-radius: 2px;
+            padding: 0 31px 0 0;
+            outline: none;
+        }
+    }
+    &-board {
+        width: 100%;
+        &-column {
+            &-title {
+                font-weight: 500;
+            }
+        }
+    }
+}
+table {
+    table-layout: fixed;
+    width:100%
+}
+
+
+
+.table-board-column-title::after {
+    content: '|';
+    padding-left: 120px;
+    color: grey;
+    font-size: 20px;
+}
+
+.glyphicon-floppy-disk {
+    padding: 5px 10px;
+}
+
+
+th {
+    text-align: left;
+    padding: 15px 0;
+    font-weight: 500;
+    border-bottom: 1px solid lightgrey;
+    word-wrap: break-word;
+}
